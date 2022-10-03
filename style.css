@@ -138,6 +138,11 @@ main{
         grid-template-rows: auto;
     }
 
+    .product--img{
+        border-radius: 15px 15px 0 15px;
+      }
+      
+
     .product--info{
         padding: 25px;
         margin-top: 5px;
