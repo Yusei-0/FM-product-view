@@ -104,6 +104,9 @@ main{
     color: var(--just-white);
     border: none;
     border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .info--add-button img{
