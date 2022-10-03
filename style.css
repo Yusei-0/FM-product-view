@@ -36,9 +36,8 @@ main{
 .product-detail-card{
     min-width: 290px;
     max-width: 400px;
-    /* height: 800px; */
     display: grid;
-    grid-template-rows: 250px 400px;
+    grid-template-rows: 250px 380px;
     background-color: var(--just-white);
     border-radius: 15px;
     margin: 15px;
@@ -65,7 +64,7 @@ main{
 }
 
 .info--product-title{
-    font-size: 3.2rem;
+    font-size: 3.0rem;
     font-family: var(--font-fraunces);
     font-weight: 700;
     line-height: 3.4rem;
@@ -74,7 +73,7 @@ main{
 }
 
 .info--text{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 2.4rem;
     color: var(--grasyish-blue);
@@ -82,7 +81,7 @@ main{
 }
 
 .info--price{
-    font-size: 3.6rem;
+    font-size: 3.0rem;
     font-family: var(--font-fraunces);
     font-weight: 700;
     color: var(--dark-cyan);
@@ -90,7 +89,7 @@ main{
 }
 
 .info--price sup{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-left: 20px;
     font-weight: 500;
     color: var(--grasyish-blue);
@@ -105,18 +104,67 @@ main{
     color: var(--just-white);
     border: none;
     border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .info--add-button img{
     margin-right: 10px;
+    width: 15px;
 }
 
 @media (min-width: 340px) {
     .product-detail-card{
-        grid-template-rows: 250px 380px;
+        grid-template-rows: 250px 360px;
     }
 }
 
-@media (min-width: 375px){
+@media (min-width: 370px){
+    .product-detail-card{
+        grid-template-rows: 250px 340px;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    main{
+        height: 100vh;
+    }
+
+    .product-detail-card{
+        max-width: 600px;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: auto;
+    }
+
+    .product--info{
+        padding: 25px;
+        margin-top: 5px;
+    }
     
+    .info--category {
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 0.4rem;
+        color: var(--grasyish-blue);
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .info--product-title{
+        margin-bottom: 25px;
+    }
+    
+    .info--text{
+        margin-bottom: 25px;
+    }
+    
+    .info--price{
+        margin-bottom: 20px;
+    }
+    
+    .info--add-button{
+      margin-bottom: 10px;
+    }
 }
