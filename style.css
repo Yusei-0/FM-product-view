@@ -111,6 +111,7 @@ main{
 
 .info--add-button img{
     margin-right: 10px;
+    width: 15px;
 }
 
 @media (min-width: 340px) {
